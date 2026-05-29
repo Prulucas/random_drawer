@@ -6,16 +6,16 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-$lbv%ihx*7wu&#okx^6tt$+l3@8+kit)0e7mxoxz5g#d3y713)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'random-drawer.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -110,6 +110,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 CORS_ALLOW_ALL_ORIGINS = True
 
-'''CORS_ALLOWED_ORIGINS = [
-    "https://#",
-]'''
+CORS_ALLOWED_ORIGINS = [
+    "https://random-drawer-prulucas.vercel.app",
+]
