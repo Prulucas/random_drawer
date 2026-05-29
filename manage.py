@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'radom_drawer.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'random_drawer.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
